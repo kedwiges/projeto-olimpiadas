@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olimpiadas 2024</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
    <header>
     <h1>Jogos Olímpicos</h1>
     <p>Resumo Completo das Olimpadas 2024 </p>
    </header> 
-
-   <div id="ex">
-       <nav>
-        <ul>
+   <span id="burguer" class="material-symbols-outlined" onclick="menuBurguer()">
+    menu
+    </span>
+       <nav id="itens">
+        <ul id="container"> <!--container em relação aos negocio do menu-->
             <li><a href="#abertura">Abertura</a></li>
             <li><a href="#modalidade">Modalidades</a></li>
             <li><a href="#adestaque">Atletas Destaque</a></li>
             <li><a href="#medalhas">Medalhas BR</a></li>
         </ul>
        </nav>
-   </div>
+
+     
 
    <main>
     <article>
@@ -192,5 +198,7 @@
    <footer>
     <p>Site criado por Kricia Edwiges - 553450</p>
    </footer>
+
+   <script src="script.js"></script>
 </body>
 </html>
